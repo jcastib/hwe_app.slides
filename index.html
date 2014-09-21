@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=1024" />
+   <meta name="apple-mobile-web-app-capable" content="yes" />
+   <title>As never Seen Before -- Hardy-Weinberg Equilibrium Calculator</title>
+   <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+   <meta name="author" content="jocaqui" />
+   <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+   <link href="libraries/frameworks/impressjs/css/impress-demo.css" rel="stylesheet" />
+   <link rel="shortcut icon" href="libraries/frameworks/impressjs/favicon.png" />
+   <link rel="apple-touch-icon" href="libraries/frameworks/impressjs/apple-touch-icon.png" />
+   <link href="libraries/highlighters/prettify/css/tomorrow.css" rel="stylesheet" />   <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body class="impress-not-supported">
+  <div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are   
+      presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> 
+      browser.</p>
+  </div>
+  <div id="impress">
+    
+    <div id="slide-1" class="step " 
+  data-x="" data-y=""  
+   
+    
+    
+   >
+ 
+ <p><q>Have you ever wonder if <strong>a gene</strong> you know is under <strong>Natural Selection</strong>?</q></p>
+
+</div>
+<div id="slide-2" class="step " 
+  data-x="500" data-y="1500"  
+   
+    
+    
+   >
+ <h1>Wonder no Further!!!!!! </br></h1>
+ <p><strong>Try the HWE Genetic Calculator App.</strong>  </br><br>
+<a href="http://jocaqui.shinyapps.io/hwe_app">HWE-APP</a><br>
+<br/>
+<span class="footnote">An easy to use Calculator to examine if a gene is in Hardy-Weinberg Equilibrium or not.</span><br>
+</br>    </p>
+
+<h2><em>HWE: Hardy-Weinberg Equilibrium</em>    </h2>
+
+</div>
+<div id="slide-3" class="step slide" 
+  data-x="2000" data-y="2000"  
+    data-rotate="45" 
+    
+    
+   >
+ <h1><strong>What Exactly is the Hardy-Weinberg Equilibrium?</strong> </br></h1>
+ <p></br></p>
+
+<ul>
+<li>The Hardy-Weinberg principle is commonly used in population genetic studies and states that a gene in a population should remain constant from generation to generation when there is not an effect of evolution going on.<br>
+</br></li>
+<li>A gene in a population is at Hardy-Weinberg Equilibrium when the population is mating randomly, size of the population is large and there is no migration, mutation or selection.<br>
+</br>
+You want to get more technical, go to <a href="http://en.wikipedia.org/wiki/Hardy%E2%80%93Weinberg_principle">Wiki-HWE</a>. <br/>
+</br></li>
+</ul>
+
+</div>
+<div id="rstats" class="step " 
+  data-x="2500" data-y="3500"  
+   
+    
+    
+   >
+ 
+ <p>To work the App, you will only need observed gene frequencies (i.e. AA, AB, BB genotypes) or just play with the sliders.<br>
+</br>
+<a href="http://jocaqui.shinyapps.io/hwe_app">HWE-APP</a><br>
+<br/>
+The App uses the package <a href="http://cran.r-project.org/web/packages/HardyWeinberg/index.html">HardyWeinberg</a> from the R-Project. <br/></p>
+
+</div>
+<div id="slide-5" class="step " 
+  data-x="4000" data-y="5500"  
+   
+    
+    
+   >
+ 
+ <p>The App will give a decision for HW equilibrium or not, a summary of frequencies and a barplot.<br>
+<img src="assets/fig/unnamed-chunk-1.png" alt="plot of chunk unnamed-chunk-1"> </p>
+
+<p>Happy Apping and Coding!!!!!</p>
+
+</div>
+ 
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+  </div>
+
+  <div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+  </div>
+  
+  <div style="position: fixed; bottom: 10px; left: 10px; pointer-events: auto;">
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  </div>
+  </body>
+ <script>
+  if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+  }
+ </script>
+ <script src="libraries/frameworks/impressjs/js/impress.js"></script>
+ <script>impress().init();</script>
+ <!-- Google Prettify -->
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+ <script src='libraries/highlighters/prettify/js/lang-r.js'></script>
+ <script>
+   var pres = document.getElementsByTagName("pre");
+   for (var i=0; i < pres.length; ++i) {
+     pres[i].className = "prettyprint linenums";
+   }
+   prettyPrint();
+ </script>
+ <!-- End Google Prettify --> 
+ </html>
